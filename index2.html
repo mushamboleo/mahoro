@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        min-height: 0vh;
+    }
+
+    .logo {
+        background-color: rgb(38, 38, 77);
+        /* width: ; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        transition-duration: 1s;
+        color: aliceblue;
+        font-weight: 800;
+
+    }
+
+    .link {
+        display: flex;
+        column-gap: 10px;
+        color: beige;
+    
+
+    }
+
+    .link a {
+        color: aliceblue;
+        font-weight: 800;
+        text-decoration: none;
+    }
+
+    .link a:hover {
+        transition: all;
+        color: brown;
+        transition-duration: 1s;
+    }
+
+    .log p {
+        color: aliceblue;
+        font-weight: 800;
+    }
+
+    .logo p:hover {
+        translate: all;
+        color: brown;
+        transition-duration: 1s;
+        cursor: pointer;
+    }
+
+
+    .footer {
+        padding-top: 30px;
+        display: flex;
+
+    }
+
+    .container {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        padding: 4px;
+        background-color: rgb(12, 68, 250);
+    }
+
+    .footer {
+        width: 33.3%;
+        display: flex;
+
+
+    }
+
+    .h3 {
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 28px;
+    }
+
+    .footer-content {
+        width: 60px;
+        margin: auto;
+        padding: 7px;
+    }
+
+    .footer-content p {
+        margin: auto;
+        padding: 7px;
+        width: 190px;
+    }
+
+    .footer-content ul {
+        text-align: center;
+
+    }
+
+    .list {
+        padding: 0;
+    }
+
+    .list li {
+        width: auto;
+        padding: 7px;
+        text-align: center;
+        position: relative;
+        list-style-type: none;
+    }
+
+    .list li::before {
+        content: "";
+        transform: translate(-50% -50%);
+        width: 0;
+        height: 2px;
+        ;
+        top: 50%;
+        left: 50%;
+        background: orange;
+        transition-duration: 5s;
+
+    }
+
+    .list li:hover::before {
+        width: 70px;
+
+    }
+
+    .social-icons {
+        text-align: center;
+        padding: 0;
+
+    }
+
+    .social-icons li {
+        display: inline-block;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .buttom-bar {
+        text-align: center;
+        padding: 5px;
+        background-color: rgb(61, 61, 116);
+    }
+
+    .reg {
+        color: aliceblue;
+        transition-duration: 1s;
+        display: flex;
+        font-weight: 800;
+        padding: 10px;
+        background-color: white;
+        
+
+    }
+
+    .reg a {
+        color: rgb(95, 172, 240);
+        transition-duration: 1s;
+        text-decoration: none;
+    }
+
+    .reg a:hover {
+        color: brown;
+        transition-duration: 1s;
+        translate: all;
+    }
+
+
+    .helo {
+        background-size: cover;
+        background-position: center;
+
+        background-image: url('mahoro2.jpg');
+        height: 60vh;
+    }
+
+    .big {
+        color: #f0f8ff;
+        display: flex;
+        row-gap: 30px;
+        flex-direction: column;
+        border-width: 50px;
+    }
+
+    .dark {
+        height: 60vh;
+        background-color: black;
+        opacity: 50%;
+    }
+</style>
+
+<body>
+    <!-- nav -->
+    <div class="logo">
+        <div class="san">
+            <p> ESPAG GITWE SCHOOL</p>
+        </div>
+        <div class="link">
+            <a href="">HOME</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="">CONTACT US</a>
+        </div>
+        <div class="reg">
+            <a href="">REGISTER</a>
+        </div>
+    </div>
+    <!-- main contents -->
+    <div class="main">
+        <!-- helo section -->
+        <div class="helo">
+            <!-- darktone -->
+            <div class="dark">
+                <div class="content">
+                    <!-- big tittle -->
+                </div>
+                <div class="big">
+                    <h1>EDUCATE, LEARN & RESEARCH IN RWANDA</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>contact us</h3>
+                <p>Email:info@gmail.com</p>
+                <p>phone:+250781234567 0787114356</p>
+                <p>address:kgl</p>
+            </div>
+            <div class="footer-content">
+                <h3>quick link</h3>
+                <ul>
+                    <div class="list">
+                        <li><a href="">home</a></li>
+                        <li><a href="">about</a></li>
+                        <li><a href="">service</a></li>
+                    </div>
+            </div>
+            </ul>
+            <div class="footer-content">
+                <h3>follow us</h3>
+                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            </div>
+        </div>
+        <div class="buttom-bar">
+            <p>&copy;copy your company.all right served </p>
+        </div>
+    </footer>
+</body>
+
+</html>
