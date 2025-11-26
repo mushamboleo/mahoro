@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
     * {
@@ -60,7 +61,7 @@
 
 
     .footer {
-        padding-top: 30px;
+        padding-top: 40px;
         display: flex;
 
     }
@@ -70,9 +71,9 @@
         display: flex;
         justify-content: center;
         padding: 4px;
-        background-color: rgb(12, 68, 250);
+        background-color:  rgb(61, 61, 116);
     }
-
+    
     .footer {
         width: 33.3%;
         display: flex;
@@ -80,10 +81,11 @@
 
     }
 
-    .h3 {
+   .footer-content.h3 {
         text-align: center;
         margin-bottom: 15px;
         font-size: 28px;
+        color: antiquewhite;
     }
 
     .footer-content {
@@ -97,6 +99,12 @@
         padding: 7px;
         width: 190px;
     }
+    .footer-content h3{
+        color: antiquewhite;
+    }
+ .list a{
+      color: black;
+ }
 
     .footer-content ul {
         text-align: center;
@@ -116,11 +124,9 @@
     }
 
     .list li::before {
-        content: "";
-        transform: translate(-50% -50%);
-        width: 0;
-        height: 2px;
-        ;
+        transform:translate(-50% -50%);
+        width:0;
+        height:2px;
         top: 50%;
         left: 50%;
         background: orange;
@@ -148,7 +154,7 @@
     .buttom-bar {
         text-align: center;
         padding: 5px;
-        background-color: rgb(61, 61, 116);
+        background-color: rgb(38, 38, 77);
     }
 
     .reg {
@@ -179,12 +185,12 @@
         background-size: cover;
         background-position: center;
 
-        background-image: url('mahoro2.jpg');
-        height: 60vh;
+        background-image: url('AGRI2.jpg');
+        height: 50vh;
     }
 
     .big {
-        color: #f0f8ff;
+        color: #83b4df;
         display: flex;
         row-gap: 30px;
         flex-direction: column;
@@ -192,22 +198,33 @@
     }
 
     .dark {
-        height: 60vh;
+        height: 50vh;
         background-color: black;
         opacity: 50%;
+    }
+    .big-content{
+        display: flex;
+         align-items: center;
+      justify-content: space-evenly;
+      background: white;
+      width: 80%;
+      justify-items: center;
+    }
+    .big-content h1{
+        
+
     }
 </style>
 
 <body>
     <!-- nav -->
     <div class="logo">
-        <div class="san">
-            <p> ESPAG GITWE SCHOOL</p>
-        </div>
+    <img src="RPolytechnic_Logo.png">
         <div class="link">
-            <a href="">HOME</a>
+            <a href="index2.html">HOME</a>
             <a href="about.html">ABOUT US</a>
-            <a href="">CONTACT US</a>
+            <a href="SERVICES.html">SERVICES</a>
+         <a href="">ACADEMIC'S</a>
         </div>
         <div class="reg">
             <a href="">REGISTER</a>
@@ -220,15 +237,14 @@
             <!-- darktone -->
             <div class="dark">
                 <div class="content">
-                    <!-- big tittle -->
+                     <h1>Agricultural Engineering Department</h1>
+                     <p>Agricultural Engineering is a newly established Department 
+                        from IPRC Karongi that offer a Horticulture Programme. 
+                        It aims at training Advanced Diploma…
+                     </p>
+                  </div>
                 </div>
-                <div class="big">
-                    <h1>EDUCATE, LEARN & RESEARCH IN RWANDA</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
+               </div>
     <!-- footer -->
     <footer>
         <div class="container">
@@ -250,9 +266,9 @@
             </ul>
             <div class="footer-content">
                 <h3>follow us</h3>
-                <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-facebook" style="color: black;"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter" style="color: black;"></i></a></li>
+                <li><a href="https://www.instagram.com/mu_sha_mbo_wa/"><i class="fab fa-instagram" style="color: black;"></i></a></li>
             </div>
         </div>
         <div class="buttom-bar">

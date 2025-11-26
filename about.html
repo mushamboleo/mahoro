@@ -1,148 +1,588 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<style>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <style>
     * {
-        margin: 0;
-        padding: 0;
-        min-height: 0vh;
+      margin: 0;
+      padding: 0;
+      min-height: 0vh;
     }
 
     .logo {
-        background-color: rgb(45, 45, 82);
-        /* width: ; */
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 20px;
-        transition-duration: 1s;
-        color: aliceblue;
-        font-weight: 800;
-
+      background-color: rgb(45, 45, 82);
+      /* width: ; */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      transition-duration: 1s;
+      color: aliceblue;
+      font-weight: 800;
     }
 
+    .logo img {
+      width: 100px;
+      height: 50px;
+    }
     .link {
-        display: flex;
-        column-gap: 10px;
-        color: beige;
-
+      display: flex;
+      column-gap: 10px;
+      color: beige;
     }
 
     .link a {
-        color: aliceblue;
-        font-weight: 800;
-        text-decoration: none;
+      color: aliceblue;
+      font-weight: 800;
+      text-decoration: none;
     }
 
     .link a:hover {
-        transition: all;
-        color: brown;
-        transition-duration: 1s;
+      transition: all;
+      color: brown;
+      transition-duration: 1s;
     }
 
     .log p {
-        color: aliceblue;
-        font-weight: 800;
+      color: aliceblue;
+      font-weight: 800;
     }
 
     .logo p:hover {
-        translate: all;
-        color: brown;
-        transition-duration: 1s;
-        cursor: pointer;
+      translate: all;
+      color: brown;
+      transition-duration: 1s;
+      cursor: pointer;
     }
     .reg {
-        color: aliceblue;
-        transition-duration: 1s;
-        display: flex;
-        font-weight: 800;
-        padding: 10px;
-        background-color: white;
-        padding: 10px;
-        background-color: white;
-        
-
+      color: aliceblue;
+      transition-duration: 1s;
+      display: flex;
+      font-weight: 800;
+      padding: 10px;
+      background-color: white;
+      padding: 10px;
+      background-color: white;
     }
 
     .reg a {
-        color: rgb(95, 172, 240);
-        transition-duration: 1s;
-        text-decoration: none;
+      color: rgb(95, 172, 240);
+      transition-duration: 1s;
+      text-decoration: none;
     }
 
     .reg a:hover {
-        color: brown;
-        transition-duration: 1s;
-        translate: all;
+      color: brown;
+      transition-duration: 1s;
+      translate: all;
     }
-    .warraper{
-        display: flex;
-        row-gap: 20px;
-        padding-top: 50px;
-        flex-direction: column;
-        padding-left:100px;
+    .warraper {
+      display: flex;
+      row-gap: 20px;
+      padding-top: 50px;
+      flex-direction: column;
+      padding-left: 100px;
     }
-.warraper h2{
-    column-gap: 10px;
-    padding-bottom: 12px;
-    color:antiquewhite;
-}
-.warraper p{
-    width: 400px;
-    color: antiquewhite;
-}
-.hello{
-    background-size: cover;
-        background-position: center;
+    .warraper h2 {
+      column-gap: 10px;
+      padding-bottom: 12px;
+      color: antiquewhite;
+    }
+    .warraper p {
+      width: 400px;
+      color: antiquewhite;
+    }
+    .hello {
+      background-size: cover;
+      background-position: center;
 
-        background-image: url('iprckarongi2.jpg');
+      background-image: url("iprckarongi2.jpg");
+
+      height: 70vh;
+      padding-bottom: 10px;
+    }
+    .darktone {
+      padding-bottom: 10px;
+
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 70vh;
+    }
+    .all {
+      display: flex;
+      justify-content: center;
+    }
+    .main-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      background: white;
+      width: 80%;
+      justify-items: center;
+    }
+    .main-content .justify-content,
+    .justify-content1,
+    .justify-content2,
+    .justify-content3 {
+      display: flex;
+      flex: auto;
+      flex-direction: column;
+      text-align: center;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      row-gap: 10px;
+    }
+    .main-content h1 {
+      color: blue;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    }
+    .main-content p {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    }
+    .header {
+      width: 100%;
+      padding: 3px;
+      /* flex-direction: ; */
+      /* column-gap: 80px; */
+      display: flex;
+      padding-top: 100px;
+      column-gap: 40px;
+      padding-left: 30px;
+    }
+    .header1 {
+      flex: auto;
+      width: 100%;
+      padding-top: 80px;
+    }
+    .header2 {
+      flex: auto;
+      width: 100%;
+      padding-top: 80px;
+    }
+    .header2 .items {
+      display: flex;
+      row-gap: 30px;
+      flex-direction: column;
+    }
+    .header1 .p {
+      display: flex;
+      row-gap: 70px;
+      /* width: 100%; */
+    }
+    .header .header1 {
+      display: flex;
+      row-gap: 30px;
+      flex-direction: column;
+    }
+    .gif {
+      display: flex;
+      row-gap: 30px;
+      flex-direction: column;
+    }
+    .gif h1 {
+      display: flex;
+      color: rgb(44, 44, 88);
+    }
+    .items h1 {
+      display: flex;
+      color: rgb(44, 44, 88);
+    }
+    .header1 h1 {
+      display: flex;
+      color: rgb(44, 44,88);
+    }
+    .jof{
+         display: flex;
+      row-gap: 30px;
+      flex-direction: column;
+    }
+    .jof h1{
+       display: flex;
+      color: rgb(44, 44,88);
+    }
+    .manager{
+      width: 100%;
+      padding: 3px;
+      /* flex-direction: ; */
+      /* column-gap: 80px; */
+      /* display: flex; */
+      padding-top: 100px;
+      column-gap: 40px;
+      padding-left: 30px; 
+    }
+       .domain2 {
+    display: flex;
+      /* align-items: center; */
+      justify-content: space-between;
+      padding: 20px;
+      transition-duration: 1s;
+      font-weight: 800;
+      column-gap: 40px;
+    }
+    .domain2 h1 {
+      color: blue;
+    }
+    .domain2 img{
+      width: 500px;
+      height: 700px;
+      display: flex;
+      padding: 10px;
+    }
+    /* .domain2{
+      flex: auto;
+      width: 100%;
+      padding-top:80PX;
+    } */
+    .domain2 .inga{
+      display: flex;
+      row-gap: 30px;
+      flex-direction: column;
+    }
+      .footer {
+        padding-top: 40px;
+        display: flex;
+
+    }
+
+    .container {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        padding: 4px;
+        background-color:  rgb(61, 61, 116);
+    }
+    
+    .footer {
+        width: 33.3%;
+        display: flex;
+
+
+
+      }
+
+    .h3 {
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 28px;
+    }
+
+    .footer-content {
+        width: 60px;
+        margin: auto;
+        padding: 7px;
+    }
+    .footer-content h3{
+      color: antiquewhite;
+    }
+
+    .footer-content p {
+        margin: auto;
+        padding: 7px;
+        width: 190px;
+    }
+
+    .footer-content ul {
+        text-align: center;
+
+    }
+
+    .list {
+        padding: 0;
+    }
+    .list li {
+        width: auto;
+        padding: 7px;
+        text-align: center;
+        position: relative;
+        list-style-type: none;
+    }
+    .list li::before {
+        content: "";
+        transform: translate(-50% -50%);
+        width: 0;
+        height: 2px;
+        top: 50%;
+        left: 50%;
+        background: orange;
+        transition-duration: 5s;
         
-        height: 60vh;
-}
-.darktone{
-background-color: rgba(0, 0, 0, 0.7);
-height: 60vh;
-}
-</style>
-<body>
-     <!-- nav -->
-     <div class="logo">
-        <div class="san">
-            <p> ESPAG GITWE SCHOOL</p>
-        </div>
-        <div class="link">
-            <a href="">HOME</a>
-            <a href="">ABOUT</a>
-            <a href="">CONTACT</a>
-        </div>
-        <div class="reg">
-            <a href="">REGISTER</a>
-        </div>
+
+    }
+
+    .list li:hover::before {
+        width: 70px;
+        
+
+    }
+    .list a{
+      color: black;
+    }
+    .list{
+color:black;
+    }
+    .list2 {
+        padding: 0;
+    }
+
+    .list2 li {
+        width: auto;
+        padding: 7px;
+        text-align: center;
+        position: relative;
+        list-style-type: none;
+    }
+
+    .list2 li::before {
+        content: "";
+        transform: translate(-50% -50%);
+        width: 0;
+        height: 2px;
+        top: 50%;
+        left: 50%;
+        background: orange;
+        transition-duration: 5s;
+
+    }
+
+    .list2 li:hover::before {
+        width: 70px;
+
+    }
+
+    .social-icons {
+        text-align: center;
+        padding: 0;
+
+    }
+
+    .social-icons li {
+        display: inline-block;
+        text-align: center;
+        padding: 5px;
+        
+    }
+
+    .buttom-bar {
+        text-align: center;
+        padding: 5px;
+        background-color: rgb(38, 38, 77);
+    }
+
+  </style>
+  <body>
+    <!-- nav -->
+    <div class="logo">
+      <img src="RPolytechnic_Logo.png" />
+      <!-- </div> -->
+      <div class="link">
+        <a href="index2.html">HOME</a>
+        <a href="">ABOUT US</a>
+        <a href="SERVICES.html">SERVICES</a>
+        <a href=""> ACADEMIC'S</a>
+      </div>
+      <div class="reg">
+        <a href="">REGISTER</a>
+      </div>
     </div>
     <!-- about -->
-     <!-- hello -->
+    <!-- hello -->
 
-     <div class="hello">
-        <div class="darktone">
-     <div class="warraper about">
-  <h2>ABOUT IPRC KARONGI</h2> 
-  <p>The Integrated Polytechnic Regional College (IPRC) of Karongi is one of eight 
-    IPRCs that make up Rwanda Polytechnic. We offer Technical and Vocational Education Training at
-     all levels up to level seven commonly known as Advanced Diploma. We are determined to equip our 
-     students with practical knowledge and skills that enable them to create jobs and compete in 
-     the labor market. Our programs are subdivided into five departments specifically Agricultural 
-     Engineering with Horticulture Technology Program, Electrical & Electronics Engineering
-      with Electrical Technology Program, Hospitality Management with Culinary Arts, 
-      Food & Beverage Management and Room Division Management Programs, Information & 
-      Communication Technology with IT Program as well as 
-      Mechanical Engineering with Automobile
-     Technology and Manufacturing Technology Programs.</p> 
-     </div>
+    <div class="hello">
+      <div class="darktone">
+        <div class="warraper about">
+          <h2>ABOUT IPRC KARONGI</h2>
+          <p>
+            The Integrated Polytechnic Regional College (IPRC) of Karongi is one
+            of eight IPRCs that make up Rwanda Polytechnic. We offer Technical
+            and Vocational Education Training at all levels up to level seven
+            commonly known as Advanced Diploma. We are determined to equip our
+            students with practical knowledge and skills that enable them to
+            create jobs and compete in the labor market. Our programs are
+            subdivided into five departments specifically Agricultural
+            Engineering with Horticulture Technology Program, Electrical &
+            Electronics Engineering with Electrical Technology Program,
+            Hospitality Management with Culinary Arts, Food & Beverage
+            Management and Room Division Management Programs, Information &
+            Communication Technology with IT Program as well as Mechanical
+            Engineering with Automobile Technology and Manufacturing Technology
+            Programs.
+          </p>
+        </div>
+        <div class="all">
+          <div class="main-content">
+            <div class="justify-content">
+              <div class="content1">
+                <h1>767</h1>
+              </div>
+              <div class="content2">
+                <p>TOTAL GRADUATES</p>
+              </div>
+            </div>
+            <div class="justify-content1">
+              <div class="main1">
+                <h1>1526</h1>
+              </div>
+              <div class="main2">
+                <p>TOTAL STUDENTS</p>
+              </div>
+            </div>
+            <div class="justify-content2">
+              <div class="main3">
+                <h1>436</h1>
+              </div>
+              <div class="main4">
+                <p>FEMALE</p>
+              </div>
+            </div>
+            <div class="justify-content3">
+              <div class="main5">
+                <h1>1090</h1>
+              </div>
+              <div class="main6">
+                <p>MALE</p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- the main contents -->
+    <div class="header">
+      <div class="header1">
+        <h1>HISTORY</h1>
+        <p>
+          1. Creation The Integrated Polytechnic Regional College (IPRC) Karongi
+          was initiated in 1989 by <br />
+          the Government of Rwanda supported by the World Bank in terms of
+          equipment and infrastructures <br />
+          as a Technical Secondary School. In September 1990, the first batch of
+          160 students divided up in four classes all boarded was admitted in
+          the school<br />
+          year 1990/1991 with trades of Industrial Installations, Heavy Machine
+          Mechanics and Maintenance mechanics. The school started with four
+          Trainers including a Director. At that time, the school had two
+          Workshops, six classrooms, four dormitories, a kitchen + dining room,
+          an administrative block and fifteen houses for trainers. 2. Evolution
+          In April 1994, the Genocide arose when the fist batch<br />
+          was about to graduate in July of that year. The school then stopped
+          its activities because of the Genocide. There was looting of
+          equipment, tools and teaching materials especially for Automobile
+          Mechanics option. The presence of the MINUAR (United Nations Mission
+          to Rwanda) and afterward those of Operation called "Turquoise"
+          increased largely this situation of looting and destruction. On 23rd
+          October 1995 classes resumed with the support of "GTZ/ETO-MINEDUC"
+          project. The reopening started with two trades: General and Motor
+          Vehicle mechanics ordinary level (A3) with six classes from senior one
+          to four with a total number of 182 boarded students (181 boys and one
+          girl). The personnel included five administrators (Director, Deputy in
+          charge <br />of studies, Deputy in charge of discipline, Bursar,
+          Secretary), three permanent trainers and three visiting
+        </p>
+      </div>
+      <div class="header2">
+        <div class="items">
+          <h1>VISION</h1>
+          <p>
+            IPRC Karongi aspires to be the leader in professional training that
+            provides an innovative and excellent education for knowledge-based
+            economy and sustainable development.
+          </p>
+        </div>
+        <div class="items2">
+          <br /><br />
+          <div class="gif">
+            <h1>MISSION</h1>
+            <p>
+              IPRC Karongi empowers students to develop their knowledge, skills,
+              and potential as critical thinkers. It provides high quality
+              technological,<br />
+              professional and vocational training, develops creative,
+              competitive, innovative and entrepreneurial manpower with
+              hand-on-experience.
+            </p>
+          </div>
+          <br><br>
+          <div class="items3">
+            <div class="jof">
+              <h1>CORE FUNCTIONS</h1>
+              <p>
+                The core functions of IPRC Karongi fall in the following: To
+                offer technical and vocational<br> courses leading to certificate or
+                diploma, and to provide science- and technology-based <br>technical
+                and vocational training as well as education which enable the
+                beneficiary <br>to create jobs for personal development and
+                contribute to national development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+       </div>
     </div>
-</body>
+    <br><br>
+     <div  class="manager">
+      <h1>RP - IPRC KARONGI TOP MANAGERS
+
+</h1>
+<div class="domain2">
+          <div class="domain">
+  
+          <img src="Dominique_Ingabire.jpg">
+          </div>
+          <div class="inga">
+       <h1>Dominique INGABIRE</h1>
+       principal
+       <p>Mrs. Dominique INGABIRE is the Principal of IPRC Karongi. 
+        She was appointed
+         by the Cabinet
+         on February 19, 2021. Prior to this position, she was 
+         the Deputy Principal in Charge of Academics and Training 
+         at 
+        IPRC Gishari.</p>
+        </div>
+        </div>
+        </div>
+        <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>contact us</h3>
+                <p>Email:info@gmail.com</p>
+                <p>phone:+250781234567 0787114356</p>
+                <p>address:kgl</p>
+            </div>
+            <div class="footer-content">
+                <h3>quicklink</h3>
+                <ul>
+                    <div class="list">
+                        <li><a href="">home</a></li>
+                        <li><a href="">about</a></li>
+                        <li><a href="">service</a></li>
+                    </div>
+            </div>
+            </ul>
+            <div class="footer-content">
+              <div class="list2">
+                <h3>follow us</h3>
+                <li><a href=""><i class="fab fa-facebook" style="color: rgb(5, 5, 5);"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter" style="color: black;"></i></a></li>
+                <li><a href="https://www.instagram.com/mu_sha_mbo_wa/"><i class="fab fa-instagram" style="color: rgb(5, 5, 5);"></i></a></li>
+            </div>
+            </div>
+        </div>
+        <div class="buttom-bar">
+        <p>&copy;copy your company.all right served </p>
+        </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
