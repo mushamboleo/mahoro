@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,73 +6,73 @@
     <title>Document</title>
   </head>
   <style>
-    .none h3{
-        padding: 20px;
+    * {
+      padding: 0;
+      margin: 0;
     }
-    .none1{
-        /* display: flex; */
-      align-items: center;
-      justify-content: space-evenly;
-      background: white;
-      width: 100%;
-    }
-    .none1.img.h2.p{
-     /* display: flex; */
-      flex: auto;
-      flex-direction: row;
-      text-align: center;
+    .all {
       padding: 30px;
-      row-gap: 40px;
-      border-radius: 10px;
-      padding:5px;
-      border-width:5px;
+      display: flex;
+      flex-direction: column;
+      
+      width:35%;
+      
     }
-    .none1.img.h2.p{
-          border-radius: 10px;
-      padding:5px;
-      border-width:3px;
-      border-style: outset;
-      border-color: grey;
+    .header h1 {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      font-weight: bold;
+    }
+    .header p {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    }
+    .card .card-image {
+      border: 1px solid rgba(0, 0, 0, 0.3);
 
     }
-    .none1 img{
-        border-radius: 10px;
-      padding:2px;
-      border-width:1px;
-      border-style: outset;
-      border-color: grey; 
-    }
-    h2 .p{
- border-radius:10px;
-      padding:1px;
-      border-width:1px;
-      border-style: outset;
-      border-color: grey;
-    }
-    .header.h2{
-       border-radius:10px;
-      padding:1px;
-      border-width:1px;
-      border-style: outset;
-      border-color: grey; 
+
+    .content {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 5px;
+      display: flex;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+
+      flex-direction: column;
+      row-gap: 5px;
     }
   </style>
   <body>
-    <div class="none">
-<h3>Online services</h3>
-<p>The following are the online services offered:</p>
-</div>
-<div class="none1">
-    <img src="eLearning_Logo.png">
-    <div class="none2">
-        <div class="header">
-    <h2>eLearning platform</h2>
-    </div>
-    <div class="paragraph">
-    <p>Rwanda Polytechnic eLearning platform</p>
-    </div>
-    </div>
-    </div>
+    <div class="all">
+      <div class="header">
+        <h1>Online services</h1>
+        <p>The following are the online services offered:</p>
+      </div>
+      <div>
+      <div class="card">
+        <div class="card-image">
+          <img src="eLearning_Logo.png" />
+        </div>
+        <div class="content">
+          <div class="content-header">
+            <h2>eLearning platform</h2>
+          </div>
+          <div class="content-paragraph">
+            <p>Rwanda Polytechnic eLearning platform</p>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
+</div></div>
